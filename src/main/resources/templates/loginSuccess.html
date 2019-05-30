@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+</head>
+<body>
+登陆成功了
+<div sec:authorize="hasAnyAuthority('viewBook')">viewBook</div>
+<div sec:authorize="hasAnyAuthority('addBook')">addBook</div>
+</body>
+</html>
